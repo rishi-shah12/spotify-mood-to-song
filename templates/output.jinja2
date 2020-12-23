@@ -1,0 +1,111 @@
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</head>
+
+<style>
+    .page-wrapper{
+        background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+        height: 100vh;
+    }
+
+    .title-wrapper{
+        padding-top: 2rem;
+        text-align: center;
+        color: whitesmoke;
+        padding-bottom: 5rem;
+    }
+
+    .col{
+        text-align: center;
+        padding-bottom: 4rem;
+    }
+    .col img{
+        width: 25%;
+        height: auto;
+        transition: transform .2s;
+    }
+
+    .col img:hover{
+        transform: scale(1.5);
+    }
+</style>
+
+
+<div class="page-wrapper">
+    <div class="title-wrapper">
+        <h1>Music-Moji</h1>
+        <p>What's <u>your</u> current mood/activity?</p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <a href="{{ url_for('get_emoji_choice', emoji="broken-heart") }}">
+                    <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/271/broken-heart_1f494.png">
+                </a>
+            </div>
+            <div class="col">
+                <a href="{{ url_for('get_emoji_choice', emoji="person-running") }}">
+                    <img id="person-running" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/271/person-running_1f3c3.png">
+                </a>
+            </div>
+            <div class="col">
+                <a href="{{ url_for('get_emoji_choice', emoji="partying-face") }}">
+                    <img id="party-face" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/271/partying-face_1f973.png">
+                </a>
+            </div>
+            <div class="col">
+                <a href="{{ url_for('get_emoji_choice', emoji="automobile") }}">
+                    <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/320/apple/271/automobile_1f697.png">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <a href="{{ url_for('get_emoji_choice', emoji="heart-face") }}">
+                    <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/271/smiling-face-with-hearts_1f970.png">
+                </a>
+            </div>
+            <div class="col">
+                <a href="{{ url_for('get_emoji_choice', emoji="grinning-face") }}">
+                    <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/271/grinning-face-with-big-eyes_1f603.png">
+                </a>
+            </div>
+            <div class="col">
+                <a href="{{ url_for('get_emoji_choice', emoji="crying-face") }}">
+                    <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/271/crying-face_1f622.png">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <a href="{{ url_for('get_emoji_choice', emoji="santa-claus") }}">
+                    <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/271/santa-claus_1f385.png">
+                </a>
+            </div>
+            <div class="col">
+                <a href="{{ url_for('get_emoji_choice', emoji="canada") }}">
+                    <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/271/flag-canada_1f1e8-1f1e6.png">
+                </a>
+            </div>
+            <div class="col">
+                <a href="{{ url_for('get_emoji_choice', emoji="books") }}">
+                    <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/271/books_1f4da.png">
+                </a>
+            </div>
+            <div class="col">
+                <a href="{{ url_for('get_emoji_choice', emoji="cold-face") }}">
+                    <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/271/cold-face_1f976.png">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</html>
